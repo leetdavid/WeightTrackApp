@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Progress-->
+
+        <TextView
+            style="@style/headerTextView"
+            android:text="@string/header_progress" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="@dimen/list_item_height">
+            <ImageView
+                style="@style/item_image_view"
+                android:src="@drawable/ic_start" />
+            <TextView
+                style="@style/item_title_view"
+                android:text="Start" />
+            <TextView
+                style="@style/item_detail_view"
+                android:text="89.00kg"
+                android:id="@+id/stats_text_start_weight"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="@dimen/list_item_height">
+            <ImageView
+                style="@style/item_image_view"
+                android:src="@drawable/ic_current" />
+            <TextView
+                style="@style/item_title_view"
+                android:text="Current" />
+            <TextView
+                style="@style/item_detail_view"
+                android:text="81.00kg"
+                android:id="@+id/stats_text_current_weight"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="@dimen/list_item_height">
+            <ImageView
+                style="@style/item_image_view"
+                android:src="@drawable/ic_current" />
+            <TextView
+                style="@style/item_title_view"
+                android:text="Target" />
+            <TextView
+                style="@style/item_detail_view"
+                android:text="81.00kg"
+                android:id="@+id/stats_text_target_weight"/>
+        </RelativeLayout>
+        <View style="@style/divider" />
+
+        <!--Statistics-->
+
+        <TextView
+            style="@style/headerTextView"
+            android:text="@string/header_statistics" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="@dimen/list_item_height">
+
+            <ImageView
+                style="@style/item_image_view"
+                android:src="@drawable/ic_running" />
+
+            <TextView
+                style="@style/item_title_view"
+                android:text="@string/text_checkbox1" />
+
+            <TextView
+                style="@style/item_detail_view"
+                android:text="71.88%"
+                android:id="@+id/stats_text_c1_percentage"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="@dimen/list_item_height">
+
+            <ImageView
+                style="@style/item_image_view"
+                android:src="@drawable/ic_exercise"
+                android:layout_alignTop="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                style="@style/item_title_view"
+                android:text="@string/text_checkbox2"
+                android:id="@+id/textView" />
+
+            <TextView
+                style="@style/item_detail_view"
+                android:text="62.50%"
+                android:id="@+id/stats_text_c2_percentage"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="@dimen/list_item_height">
+
+            <ImageView
+                style="@style/item_image_view"
+                android:src="@drawable/ic_maximum_weight" />
+
+            <TextView
+                style="@style/item_title_view"
+                android:text="Maximum Weight" />
+
+            <TextView
+                style="@style/item_detail_view"
+                android:text="89.00kg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="@dimen/list_item_height">
+
+            <ImageView
+                style="@style/item_image_view"
+                android:src="@drawable/ic_minimum_weight" />
+
+            <TextView
+                style="@style/item_title_view"
+                android:text="Minimum Weight" />
+
+            <TextView
+                style="@style/item_detail_view"
+                android:text="80.00kg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="@dimen/list_item_height">
+
+            <ImageView
+                style="@style/item_image_view"
+                android:src="@drawable/ic_average_weight" />
+
+            <TextView
+                style="@style/item_title_view"
+                android:text="Average Weight" />
+
+            <TextView
+                style="@style/item_detail_view"
+                android:text="83.86kg" />
+
+        </RelativeLayout>
+
+        <!--All Here are Median-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="@dimen/list_item_height">
+
+            <ImageView
+                style="@style/item_image_view"
+                android:src="@drawable/ic_median_weight" />
+
+            <TextView
+                style="@style/item_title_view"
+                android:text="Median Weight" />
+
+            <TextView
+                style="@style/item_detail_view"
+                android:text="82.6kg" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

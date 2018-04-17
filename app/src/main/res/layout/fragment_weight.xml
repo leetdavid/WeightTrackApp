@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100">-->
+
+        <!--<include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/fragment_list_header" />-->
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:listheader="@layout/fragment_list_header"
+            tools:listitem="@layout/fragment_list_item"
+            android:id="@+id/weight_listview" />
+
+    <!--</LinearLayout>-->
+
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Display">
+
+        <Preference
+            android:title="Theme"
+            android:summary="Default: Teal"
+            android:key="pref_theme"/>
+
+        <Preference
+            android:title="Unit of Weight"
+            android:summary="kg"
+            android:key="pref_unit_weight"/>
+
+        <Preference
+            android:title="Date format"
+            android:summary="2017-12-31"
+            android:key="pref_dateformat"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_category_basic">
+
+        <CheckBoxPreference
+            android:key="pref_showdialogonstart"
+            android:title="@string/pref_showdialogonstart"
+            android:summary="@string/pref_showdialogonstart_summ"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_category_data">
+
+        <Preference
+            android:title="@string/pref_clear_table"
+            android:key="pref_clear_table"
+            android:defaultValue="false"/>
+
+        <Preference
+            android:title="Import CSV"
+            android:summary="Import your .csv file and replace the existing data"
+            android:key="pref_import_csv"
+            android:defaultValue="false"/>
+
+        <Preference
+            android:title="Export CSV"
+            android:summary="Export your .csv file for backup"
+            android:key="pref_export_csv"
+            android:defaultValue="false"/>
+
+        <Preference
+            android:title="Backup"
+            android:key="pref_backup_table"
+            android:summary="Backup your database to your Drive storage"
+            android:defaultValue="false"/>
+
+        <Preference
+            android:title="Restore"
+            android:key="pref_restore_table"
+            android:summary="Restore the database from Google Drive"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Body Data-->
+
+        <TextView
+            style="@style/headerTextView"
+            android:text="@string/header_bodydata"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_height="@dimen/list_item_height"
+                android:id="@+id/weight">
+
+                <TextView
+                    style="@style/item_title_view_noimage"
+                    android:text="Weight" />
+
+                <TextView
+                    android:id="@+id/valueWeight"
+                    style="@style/item_detail_view_noimage"
+                    android:text="81.40kg" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/height"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    style="@style/item_title_view_noimage"
+                    android:text="Height" />
+
+                <TextView
+                    android:id="@+id/valueHeight"
+                    style="@style/item_detail_view_noimage"
+                    android:text="173.0cm" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/age"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    style="@style/item_title_view_noimage"
+                    android:text="Age" />
+
+                <TextView
+                    android:id="@+id/valueAge"
+                    style="@style/item_detail_view_noimage"
+                    android:text="20" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:id="@+id/gender"
+                android:layout_height="@dimen/list_item_height">
+
+                <TextView
+                    android:id="@+id/valueGender"
+                    style="@style/item_detail_view_noimage"
+                    android:text="Male" />
+
+                <TextView
+                    style="@style/item_title_view_noimage"
+                    android:text="Gender"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <!--Analysis Results-->
+
+        <TextView
+            style="@style/headerTextView"
+            android:text="@string/header_analysis"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="@dimen/list_item_height"
+            android:id="@+id/bmi">
+
+            <TextView
+                style="@style/item_title_view_noimage"
+                android:clickable="false"
+                android:text="BMI (Body Mass Index)" />
+
+            <TextView
+                android:id="@+id/valueBMI"
+                style="@style/item_detail_view_noimage"
+                android:clickable="false"
+                android:text="27.20: Overweight" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="@dimen/list_item_height">
+
+            <TextView
+                style="@style/item_title_view_noimage"
+                android:text="BMR (Basal Metabolic Rate)" />
+
+            <TextView
+                android:id="@+id/valueBMR"
+                style="@style/item_detail_view_noimage"
+                android:text="1915.52kcal" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.paraverity.weighttrack.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="1000"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_backup_restore"
+        android:orderInCategory="200"
+        android:title="@string/action_backup_restore"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_import"
+        android:orderInCategory="250"
+        android:title="@string/action_import"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_export"
+        android:orderInCategory="300"
+        android:title="@string/action_export"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="400"
+        android:title="@string/action_about"
+        app:showAsAction="never" />
+</menu>
